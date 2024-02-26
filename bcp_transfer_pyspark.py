@@ -9,7 +9,7 @@ separator = "="
 keys = {}
 properties=sys.argv[1]
 def init():
-    spark=SparkSession.builder.appName("PMT BI Module").enableHiveSupport().getOrCreate()
+    spark=SparkSession.builder.appName("BCP Module").enableHiveSupport().getOrCreate()
     return spark
 
 if __name__ == '__main__':
